@@ -8,6 +8,8 @@ public class Varargs
 		varArgs(list);
 		System.out.println("Welcome calling second function");
 		varArgs(new double[]{1,2,3,4});
+		Test m=new Test();
+		System.out.println("the value of test class is"+m.x);
 
 	}
 	public static void varArgs(double... list)
@@ -18,8 +20,18 @@ public class Varargs
 			System.out.println("the variable argumnets are"+list[i]);
 		}
 	}
-	public void finalize( )
+	public void finalize()
 	{
 		System.out.println("inside finialize function!!!!");
 	}
+	
 }
+class Test
+	{
+		int x;
+		Test()
+		{
+			x=15;
+			System.out.println("hai");
+		}
+	}
